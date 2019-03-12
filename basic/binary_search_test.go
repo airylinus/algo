@@ -45,6 +45,22 @@ func TestBinarySearch(t *testing.T) {
 			},
 			wantIdx: -1,
 		},
+		{
+			name: "randomLeft",
+			args: args{
+				haystack: []int64{1, 3, 6, 8, 9, 12, 23, 35, 37, 57},
+				niddle:   int64(9),
+			},
+			wantIdx: 4,
+		},
+		{
+			name: "targetMissing",
+			args: args{
+				haystack: []int64{1, 3, 6, 8, 9, 12, 23, 35, 37, 57},
+				niddle:   int64(37),
+			},
+			wantIdx: 8,
+		},
 	}
 	for _, tt := range tests {
 		t.Run(tt.name, func(t *testing.T) {
