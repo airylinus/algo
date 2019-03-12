@@ -1,4 +1,4 @@
-package algorithm
+package basic
 
 // BinarySearch find index of niddle in haystack return -1 if not exist
 func BinarySearch(haystack []int64, niddle int64) (idx int) {
