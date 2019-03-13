@@ -1,1 +1,1 @@
-module github.com/airylinus/algorithm-learning
+module github.com/airylinus/algo
