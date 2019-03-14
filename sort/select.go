@@ -1,3 +1,6 @@
+// Package sort contains sort functions
+// select sort
+// time complexity: O (n^2)
 package sort
 
 // SelectSort return sorted haystack
